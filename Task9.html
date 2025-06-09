@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Registration Form</title>
+  <style>
+    body {
+      background-image: url('onepiece.jpg');
+      background-repeat: repeat;
+      background-size: 150px 150px;
+      font-family: Arial;
+      padding: 40px;
+    }
+    form {
+      background-color: white;
+      padding: 20px;
+      border: 2px solid teal;
+      border-radius: 10px;
+      width: 280px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      color: teal;
+    }
+    input, select, textarea {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    input[type="submit"] {
+      background-color: teal;
+      color: white;
+      border: none;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <h2>Registration</h2>
+
+    <label>Name:</label><br>
+    <input type="text" name="name"><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email"><br>
+
+    <label>Password:</label><br>
+    <input type="password" name="password"><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" name="gender"> Male
+    <input type="radio" name="gender"> Female<br><br>
+
+    <label>Country:</label><br>
+    <select name="country">
+      <option>Select</option>
+      <option>Nepal</option>
+      <option>India</option>
+      <option>USA</option>
+    </select><br>
+
+    <label>Comments:</label><br>
+    <textarea rows="4"></textarea><br>
+
+    <input type="submit" value="Register">
+  </form>
+
+</body>
+</html>
