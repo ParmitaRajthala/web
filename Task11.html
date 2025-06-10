@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Registration Form</title>
+  <style>
+    body {
+      background-color: lightblue;
+      font-family: Arial;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    form {
+      background-color: lightpink;
+      padding: 20px 30px;
+      border-radius: 10px;
+      width: 300px;
+      box-sizing: border-box;
+    }
+    input, select {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: purple;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    h2 {
+      color: purple;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <h2>Registration Form</h2>
+    <label>Full Name:</label><br>
+    <input type="text" name="fullname" required><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" required><br>
+
+    <label>Country:</label><br>
+    <select name="country" required>
+      <option value="Nepal" selected>Nepal</option>
+      <option value="India">India</option>
+      <option value="USA">USA</option>
+      <option value="UK">UK</option>
+      <option value="China">China</option>
+    </select><br>
+
+    <input type="submit" value="Register">
+  </form>
+
+</body>
+</html>
+
